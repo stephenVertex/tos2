@@ -1,0 +1,16 @@
+mutation WorkflowStateCreate($input: WorkflowStateCreateInput!) {
+  workflowStateCreate(input: $input) {
+    success
+    workflowState {
+      id
+      name
+      type
+      color
+      position
+      team {
+        id
+        key
+      }
+    }
+  }
+}
